@@ -1,0 +1,43 @@
+# Program for randomly picking a dinner location based on a list of choices. 
+# Inspired by my children and the arguing that happens before our dinner every Tuesday. 
+
+import random # Random needed for choosing below.
+
+rest_list = []
+
+print("So. It's come to this...")
+print()
+print("Your inability to make a decision has led us here.")
+print()
+print("Fine.\n")
+
+print("Please name a place at the prompt or enter 'done' when you are, you know, done.")
+print()
+print("You may name as many places as you want. But be reasonable.")
+
+# Allows for an unlimited list of places to choose from. 
+
+while True: 
+    place = input("OK, name it: ")
+    if place.lower() == "done":
+        break
+    rest_list.append(place)
+
+# Print the list before choosing.
+    
+print("Awesome. Here's the list: ")
+print(rest_list)
+print()
+
+
+# I decided to give them an out at the last second. 
+# It is the 'But none of us want to go there!' catch. 
+# Planning to add the ability to remove places as well in this step.
+
+last_ch = input("OK, last chance to abort or else we do this randomly. Do you want me to choose, 'Y' or 'N'? ")
+if last_ch.lower() == "y":
+    # The choice is decided by using a random integer to index the list. 
+    choice = rest_list[random.randint(0, len(rest_list)-1)]
+    print("OK, then by the power invested in me by Guido van Rossum and Python3.7, \n\nI declare that " + choice + " is where we're going.\n\nLet there be no complaining.\n\nGuido has spoken.")
+else:
+    print("Yeah, totally cool. Not like your Dad spent time writing, testing, doing a bunch for this...I get it.\nI mean I'm hurt...but I get it.  =)")
