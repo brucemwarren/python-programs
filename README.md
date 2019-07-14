@@ -5,6 +5,10 @@ Various short Python pieces
 
 Prints the lyrics to the song.
 
+*Magic 8 Ball
+
+The standard enter a question, get a response program.
+
 *Restaurant Picker:
 
 Enter some restaurant names and it will pick one for you. Nothing too fancy here. My kids like it and it stops arguments, so problem solved.
