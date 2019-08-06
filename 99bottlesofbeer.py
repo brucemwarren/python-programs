@@ -32,4 +32,4 @@ def bottles_of_beer(count):
         print("Please enter a number")
 
 
-bottles_of_beer(6.0)
+bottles_of_beer(6)
